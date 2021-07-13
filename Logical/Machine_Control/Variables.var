@@ -1,0 +1,15 @@
+VAR
+	doAirPump : BOOL;
+	diStartButton : BOOL;
+	diFrameLocked : BOOL;
+	StateOfProcess : StateOfProcessType;
+	TOFHeating : TOF;
+	HeatingTOFValue : REAL;
+	doHeating : BOOL;
+	BlowingTONValue : REAL;
+	BlowingTOFValue : REAL;
+	TONBlowing : TON;
+	doBlowing : BOOL;
+	TOFBlowing : TOF;
+	doFormLocked : BOOL;
+END_VAR

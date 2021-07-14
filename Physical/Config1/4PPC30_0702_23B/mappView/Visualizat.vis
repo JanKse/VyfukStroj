@@ -8,7 +8,7 @@
 		<Page refId="TimingPage"/>
 		<Page refId="TemperaturePage"/>
 		<Page refId="AlarmPage"/>
-		<Page refId="RecepisPage"/>
+		<Page refId="RecipesPage"/>
   </Pages>
   <Navigations>
    

@@ -5,4 +5,5 @@ VAR
 	gDefaultTemperatureValue : INT;
 	s : USINT;
 	New_Variable1 : USINT;
+	gAVGTemperature : INT;
 END_VAR

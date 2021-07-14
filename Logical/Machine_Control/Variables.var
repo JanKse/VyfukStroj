@@ -1,15 +1,25 @@
 VAR
-	doAirPump : BOOL;
-	diStartButton : BOOL;
-	diFrameLocked : BOOL;
-	StateOfProcess : StateOfProcessType;
-	TOFHeating : TOF;
-	HeatingTOFValue : REAL;
-	doHeating : BOOL;
-	BlowingTONValue : REAL;
-	BlowingTOFValue : REAL;
+	TONFormLocking : TON;
 	TONBlowing : TON;
-	doBlowing : BOOL;
+	TONForming : TON;
+	TOFHeating : TOF;
 	TOFBlowing : TOF;
-	doFormLocked : BOOL;
+	TOFBubble : TOF;
+	StateOfProcess : StateOfProcessType;
+	FormLockingTONValue : REAL;
+	FormingTONValue : REAL;
+	BubbleTOFValue : REAL;
+	BlowingTOFValue : REAL;
+	BlowingTONValue : REAL;
+	HeatingTOFValue : REAL;
+	diFormLocked : BOOL;
+	doBlowing : BOOL;
+	diStartButton : BOOL;
+	doAirPump : BOOL;
+	doForming : BOOL;
+	diFrameLocked : BOOL;
+	FormLocking : BOOL;
+	doFormLocking : BOOL;
+	doBubble : BOOL;
+	doHeating : BOOL;
 END_VAR

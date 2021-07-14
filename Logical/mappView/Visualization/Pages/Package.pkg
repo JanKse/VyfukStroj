@@ -6,5 +6,9 @@
     <Object Type="Package">MainMenuPage</Object>
     <Object Type="Package">OverviewPage</Object>
     <Object Type="Package">ServisPage</Object>
+    <Object Type="Package">TimingPage</Object>
+    <Object Type="Package">TemperaturesPage</Object>
+    <Object Type="Package">AlarmPage</Object>
+    <Object Type="Package">RecipesPage</Object>
   </Objects>
 </Package>

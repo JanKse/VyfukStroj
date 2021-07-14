@@ -2,10 +2,16 @@
 <vdef:Visualization id="MachineVizualization" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
   <StartPage pageRefId="MainMenuPage" />
   <Pages>
-    <Page refId="MainMenuPage"/>
+		<Page refId="MainMenuPage"/>
+		<Page refId="OverviewPage"/>
+		<Page refId="ServisPage"/>
+		<Page refId="TimingPage"/>
+		<Page refId="TemperaturePage"/>
+		<Page refId="AlarmPage"/>
+		<Page refId="RecepisPage"/>
   </Pages>
   <Navigations>
-    <Navigation refId="MainNavigation" />
+   
   </Navigations>  
   <BindingsSets>
     <!--<BindingsSet refId="" />-->

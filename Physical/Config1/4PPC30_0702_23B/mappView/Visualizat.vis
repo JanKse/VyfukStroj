@@ -14,7 +14,7 @@
    
   </Navigations>  
   <BindingsSets>
-    <!--<BindingsSet refId="" />-->
+    <BindingsSet refId="TimingPageContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <!--<EventBindingsSet refId="" />-->

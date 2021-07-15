@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="File">Visualizat.vis</Object>
     <Object Type="File">Config.mappviewcfg</Object>
+    <Object Type="File">TimingPageContent_binding.binding</Object>
   </Objects>
 </Package>

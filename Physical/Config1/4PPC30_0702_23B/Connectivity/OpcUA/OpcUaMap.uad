@@ -10,8 +10,21 @@
         <ACE RoleName="Everyone" Access="0x007F" />
       </ACL>
     </ACLAliases>
-    <EURangeViolationAliases />
-    <EURangesAliases />
+    <EURangeViolationAliases>
+      <EURangeViolation Id="1" Mode="2" />
+    </EURangeViolationAliases>
+    <EURangesAliases>
+      <EURanges Id="5">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">300</High>
+        </EURange>
+        <EURange Priority="1" RoleId="2">
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">300</High>
+        </EURange>
+      </EURanges>
+    </EURangesAliases>
     <EngineeringUnitAliases>
       <EngineeringUnit Id="1" UnitId="5457219" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="second [unit of time]" Symbol="s" />
     </EngineeringUnitAliases>
@@ -19,12 +32,12 @@
   <DefaultView AclId="2">
     <Module Name="&lt;Default&gt;">
       <Task Name="Machine_Co">
-        <Variable Name="BlowingTOFValue" EngineeringUnitId="1" />
-        <Variable Name="BlowingTONValue" EngineeringUnitId="1" />
-        <Variable Name="BubbleTOFValue" EngineeringUnitId="1" />
-        <Variable Name="FormingTONValue" EngineeringUnitId="1" />
-        <Variable Name="FormLockingTONValue" EngineeringUnitId="1" />
-        <Variable Name="HeatingTOFValue" EngineeringUnitId="1" />
+        <Variable Name="BlowingTOFValue" EURangeViolationId="1" EURangesId="5" EngineeringUnitId="1" />
+        <Variable Name="BlowingTONValue" EURangeViolationId="1" EURangesId="5" EngineeringUnitId="1" />
+        <Variable Name="BubbleTOFValue" EURangeViolationId="1" EURangesId="5" EngineeringUnitId="1" />
+        <Variable Name="FormingTONValue" EURangeViolationId="1" EURangesId="5" EngineeringUnitId="1" />
+        <Variable Name="FormLockingTONValue" EURangeViolationId="1" EURangesId="5" EngineeringUnitId="1" />
+        <Variable Name="HeatingTOFValue" EURangeViolationId="1" EURangesId="5" EngineeringUnitId="1" />
       </Task>
     </Module>
   </DefaultView>

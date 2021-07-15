@@ -1,9 +1,5 @@
 VAR
-	gaiHeatZone2temp : INT;
-	gaiHeatZone3temp : INT;
-	gaiHeatZone1temp : INT;
-	gDefaultTemperatureValue : INT;
-	s : USINT;
-	New_Variable1 : USINT;
 	gAVGTemperature : INT;
+	gSetTemperatures : TemperaturesType;
+	gSetTimersValues : TimersType;
 END_VAR

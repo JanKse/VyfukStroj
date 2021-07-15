@@ -2,7 +2,12 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">chart.svg</Object>
-    <Object Type="File">bar-chart-and-polyline.png</Object>
+    <Object Type="File">output-onlinepngtools.png</Object>
+    <Object Type="File">heater.svg</Object>
+    <Object Type="File">custom.svg</Object>
+    <Object Type="File">pump.svg</Object>
+    <Object Type="File">wind.svg</Object>
+    <Object Type="File">rectangle.svg</Object>
+    <Object Type="File">snowflake.svg</Object>
   </Objects>
 </Package>

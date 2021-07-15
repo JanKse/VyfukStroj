@@ -24,5 +24,6 @@
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle7" top="175" left="340" width="300" height="50" zIndex="19" borderStyle="none" cornerRadius="10px" backColor="rgba(255, 255, 255, 1)" />
     <Widget xsi:type="widgets.brease.Label" id="Label8" top="190" left="360" width="140" height="20" zIndex="21" text="Doba ohřevu :" textColor="rgba(0, 0, 0, 0.95)" textAlign="left" fontSize="16px" bold="true" padding="0px 5px 0px 5px" />
     <Widget xsi:type="widgets.brease.Image" id="Image1" top="30" left="140" width="40" height="40" zIndex="22" image="Media/SymbolLib/DateTime/Clock.svg" imageColor="rgba(240, 96, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Image" id="Image2" top="20" left="500" width="120" height="40" zIndex="23" image="Media/Images/output-onlinepngtools.png" />
   </Widgets>
 </Content>

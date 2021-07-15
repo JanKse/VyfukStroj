@@ -32,5 +32,6 @@
     <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse2" top="150" left="550" width="30" height="30" zIndex="28" borderWidth="4px" lineColor="rgba(255, 10, 10, 1)" backColor="rgba(255, 10, 10, 0.2)" />
     <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse3" top="230" left="550" width="30" height="30" zIndex="29" borderWidth="4px" lineColor="rgba(255, 10, 10, 1)" backColor="rgba(255, 10, 10, 0.2)" />
     <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse5" top="310" left="550" width="30" height="30" zIndex="30" borderWidth="4px" lineColor="rgba(255, 10, 10, 1)" backColor="rgba(255, 10, 10, 0.2)" />
+    <Widget xsi:type="widgets.brease.Image" id="Image2" top="20" left="500" width="120" height="40" zIndex="31" image="Media/Images/output-onlinepngtools.png" />
   </Widgets>
 </Content>

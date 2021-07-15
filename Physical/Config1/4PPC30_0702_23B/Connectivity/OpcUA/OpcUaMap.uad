@@ -31,13 +31,17 @@
   </Aliases>
   <DefaultView AclId="2">
     <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="gSetTemperatures" />
+        <Variable Name="gSetTimersValues" />
+      </GlobalVariables>
       <Task Name="Machine_Co">
-        <Variable Name="BlowingTOFValue" EURangeViolationId="1" EURangesId="5" EngineeringUnitId="1" />
-        <Variable Name="BlowingTONValue" EURangeViolationId="1" EURangesId="5" EngineeringUnitId="1" />
-        <Variable Name="BubbleTOFValue" EURangeViolationId="1" EURangesId="5" EngineeringUnitId="1" />
-        <Variable Name="FormingTONValue" EURangeViolationId="1" EURangesId="5" EngineeringUnitId="1" />
-        <Variable Name="FormLockingTONValue" EURangeViolationId="1" EURangesId="5" EngineeringUnitId="1" />
-        <Variable Name="HeatingTOFValue" EURangeViolationId="1" EURangesId="5" EngineeringUnitId="1" />
+        <Variable Name="BlowingTOFValue" />
+        <Variable Name="BlowingTONValue" />
+        <Variable Name="BubbleTOFValue" />
+        <Variable Name="FormingTONValue" />
+        <Variable Name="FormLockingTONValue" />
+        <Variable Name="HeatingTOFValue" />
       </Task>
     </Module>
   </DefaultView>

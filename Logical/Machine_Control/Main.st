@@ -20,7 +20,7 @@ PROGRAM _INIT
 	FormingTONValue := 10;
 	
 	gAVGTemperature := 100;     	// 
-	gDefaultTemperatureValue := 100;	//
+	gSetTemperatures.defaultTemperatureValue := 100;	//
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -64,8 +64,8 @@ PROGRAM _CYCLIC
 			TONForming.PT := REAL_TO_TIME(FormingTONValue * 1000);
 			TONForming();
 			
-			IF gAVGTemperature <= gDefaultTemperatureValue THEN
-				IF BubbleTOFValue <> 0 THEN
+			IF gAVGTemperature <= gSetTemperatures.defaultTemperatureValue THEN
+				IF gSetTimersValues.BubbleTOFValue <> 0 THEN
 					TOFBubble.IN := EDGEPOS(FormLocking);
 					TOFBubble.PT := REAL_TO_TIME(BubbleTOFValue * 1000);
 					TOFBubble();

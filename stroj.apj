@@ -8,6 +8,7 @@
   <Project StoreRuntimeInProject="true" />
   <Variables DefaultInitValue="0" DefaultRetain="false" DefaultVolatile="true" />
   <TechnologyPackages>
+    <mapp Version="5.14.1" />
     <mappView Version="5.14.2" />
   </TechnologyPackages>
 </Project>

@@ -25,8 +25,8 @@
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
     <Group ID="FileDevice1" />
-    <Parameter ID="FileDeviceName1" Value="USER" />
-    <Parameter ID="FileDevicePath1" Value="USER_PATH" />
+    <Parameter ID="FileDeviceName1" Value="Recipe" />
+    <Parameter ID="FileDevicePath1" Value="C:\Projects\Recipes" />
     <Parameter ID="ActivateOpcUa" Value="1" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
     <Parameter ID="KeyMappingFile" Value="VC\4PPC30_0702_23B.dis" />

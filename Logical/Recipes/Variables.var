@@ -1,0 +1,8 @@
+VAR
+	MpRecipeXml_0 : MpRecipeXml;
+	MpRecipeRegParTemperatures : MpRecipeRegPar;
+	MpRecipeRegParTimers : MpRecipeRegPar;
+	cmdLoadRecipes : BOOL;
+	cmdSaveRecipes : BOOL;
+	cmdErrorReset : BOOL;
+END_VAR

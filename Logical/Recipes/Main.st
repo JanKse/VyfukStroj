@@ -1,28 +1,20 @@
 
 PROGRAM _INIT
 	(* Insert code here *)
-	gSetTemperatures.temperatureHeatZone1 := 10;
-	gSetTemperatures.temperatureHeatZone2 := 20;
-	gSetTemperatures.temperatureHeatZone3 := 30;
-	gSetTemperatures.temperatureIRSensor :=40;
-	
-	gSetTimersValues.BlowingTOFValue :=10;
-	gSetTimersValues.BlowingTONValue := 5;
-	gSetTimersValues.BubbleTOFValue :=1;
-	gSetTimersValues.FormingTONValue :=2;
-	gSetTimersValues.FormLockingTONValue :=10;
-	gSetTimersValues.HeatingTOFValue := 1;
+
+	UISetup.RecipeListSize := 5;
 END_PROGRAM
 
 PROGRAM _CYCLIC
 	(* Insert code here *)
+	
+	
+	gDoHeatingZone1;
 	MpRecipeXml_0.MpLink := ADR(gRecipeXml);
 	MpRecipeXml_0.Enable := TRUE;
 	MpRecipeXml_0.DeviceName := ADR('Recipe');
-	MpRecipeXml_0.FileName := ADR('test');
-	MpRecipeXml_0.Load := cmdLoadRecipes;
-	MpRecipeXml_0.Save := cmdSaveRecipes;
-	MpRecipeXml_0.ErrorReset := cmdErrorReset;
+	MpRecipeXml_0.FileName := ADR('test2');
+	gRecipeLoaded := UDINT_TO_BOOL(MpRecipeXml_0.Info.FileSize); // check if Recipe is loaded (If not lenght = 0)
 	
 	MpRecipeRegParTemperatures.MpLink := ADR(gRecipeXml);
 	MpRecipeRegParTemperatures.Enable := MpRecipeXml_0.Active;
@@ -36,9 +28,15 @@ PROGRAM _CYCLIC
 	MpRecipeRegParTimers.Category := ADR('Timers');
 	MpRecipeRegParTimers.PVName := ADR('gSetTimersValues');
 	
+	RecipeUI.Enable := TRUE;
+	RecipeUI.MpLink := ADR(gRecipeXml);
+	RecipeUI.UISetup :=UISetup;
+	RecipeUI.UIConnect := ADR(UIConnect);
+	
 	MpRecipeXml_0();
 	MpRecipeRegParTemperatures();
 	MpRecipeRegParTimers();
+	RecipeUI();
 END_PROGRAM
 
 PROGRAM _EXIT

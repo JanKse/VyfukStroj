@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.10.2.37"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="GlobalArea">
+  <Property Name="Description" Value="Bitmap group for global area elements"/>
+  <Property Name="Index" Value="4"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="954" Value="Source[local].Bitmap[Home]"/>
+    <BitmapRef ID="1023" Value="Source[local].Bitmap[Alarms]"/>
+    <BitmapRef ID="1024" Value="Source[local].Bitmap[Settings]"/>
+    <BitmapRef ID="1025" Value="Source[local].Bitmap[Temperature]"/>
+    <BitmapRef ID="1052" Value="Source[local].Bitmap[Recipe]"/>
+    <BitmapRef ID="1053" Value="Source[local].Bitmap[Graph]"/>
+    <BitmapRef ID="1054" Value="Source[local].Bitmap[Clock]"/>
+    <BitmapRef ID="1096" Value="Source[local].Bitmap[SmallLogo]"/>
+    <BitmapRef ID="1097" Value="Source[local].Bitmap[BigLogo]"/>
+    <BitmapRef ID="1124" Value="Source[local].Bitmap[alarmsOrange]"/>
+    <BitmapRef ID="1125" Value="Source[local].Bitmap[graphOrange]"/>
+    <BitmapRef ID="1126" Value="Source[local].Bitmap[ClockOrange]"/>
+    <BitmapRef ID="1127" Value="Source[local].Bitmap[homeOrange]"/>
+    <BitmapRef ID="1128" Value="Source[local].Bitmap[recipeOrange]"/>
+    <BitmapRef ID="1129" Value="Source[local].Bitmap[settingsOrange]"/>
+    <BitmapRef ID="1130" Value="Source[local].Bitmap[temperatureOrange]"/>
+    <BitmapRef ID="1190" Value="Source[local].Bitmap[ClockButton]"/>
+    <BitmapRef ID="1191" Value="Source[local].Bitmap[graphButton]"/>
+    <BitmapRef ID="1192" Value="Source[local].Bitmap[homeButton]"/>
+    <BitmapRef ID="1193" Value="Source[local].Bitmap[recipeButton]"/>
+    <BitmapRef ID="1194" Value="Source[local].Bitmap[recipeButton]"/>
+    <BitmapRef ID="1195" Value="Source[local].Bitmap[servisButton]"/>
+    <BitmapRef ID="1196" Value="Source[local].Bitmap[temperatureButton]"/>
+    <BitmapRef ID="1197" Value="Source[local].Bitmap[alarmPressed]"/>
+    <BitmapRef ID="1198" Value="Source[local].Bitmap[clockPressed]"/>
+    <BitmapRef ID="1199" Value="Source[local].Bitmap[graphPressed]"/>
+    <BitmapRef ID="1200" Value="Source[local].Bitmap[homePressed]"/>
+    <BitmapRef ID="1201" Value="Source[local].Bitmap[recipePressed]"/>
+    <BitmapRef ID="1202" Value="Source[local].Bitmap[servisPressed]"/>
+    <BitmapRef ID="1203" Value="Source[local].Bitmap[temperaturePressed]"/>
+    <BitmapRef ID="1204" Value="Source[local].Bitmap[alarmButton]"/>
+    <BitmapRef ID="1328" Value="Source[local].Bitmap[pencil]"/>
+    <BitmapRef ID="1329" Value="Source[local].Bitmap[refresh]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="954" Value="0"/>
+    <Index ID="1023" Value="1"/>
+    <Index ID="1024" Value="2"/>
+    <Index ID="1025" Value="3"/>
+    <Index ID="1052" Value="4"/>
+    <Index ID="1053" Value="5"/>
+    <Index ID="1054" Value="6"/>
+    <Index ID="1096" Value="21"/>
+    <Index ID="1097" Value="22"/>
+    <Index ID="1124" Value="23"/>
+    <Index ID="1125" Value="24"/>
+    <Index ID="1126" Value="25"/>
+    <Index ID="1127" Value="26"/>
+    <Index ID="1128" Value="27"/>
+    <Index ID="1129" Value="28"/>
+    <Index ID="1130" Value="29"/>
+    <Index ID="1190" Value="30"/>
+    <Index ID="1191" Value="7"/>
+    <Index ID="1192" Value="8"/>
+    <Index ID="1193" Value="9"/>
+    <Index ID="1194" Value="10"/>
+    <Index ID="1195" Value="11"/>
+    <Index ID="1196" Value="12"/>
+    <Index ID="1197" Value="13"/>
+    <Index ID="1198" Value="14"/>
+    <Index ID="1199" Value="15"/>
+    <Index ID="1200" Value="16"/>
+    <Index ID="1201" Value="17"/>
+    <Index ID="1202" Value="31"/>
+    <Index ID="1203" Value="18"/>
+    <Index ID="1204" Value="19"/>
+    <Index ID="1328" Value="20"/>
+    <Index ID="1329" Value="32"/>
+  </IndexMap>
+</BitmapGroup>

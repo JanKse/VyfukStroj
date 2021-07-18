@@ -2,9 +2,9 @@
 TYPE
 	StateOfProcessType : 
 		(
-		WaitForStartCommand,
+		DefaultState,
 		Start,
-		Heating,
+		BubbleANDFormDownDelay,
 		PreForming,
 		Forming
 		);

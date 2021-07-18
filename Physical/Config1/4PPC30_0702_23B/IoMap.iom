@@ -1,4 +1,30 @@
-
 VAR_CONFIG
-
+	::gDoHeatingZone1 AT %QX."X20DOF322".DigitalOutput05; (*24 VDC / 0.5 A, source (Heat zone 1)*)
+	::gDoHeatingZone2 AT %QX."X20DOF322".DigitalOutput07; (*24 VDC / 0.5 A, source (Heat zone 2)*)
+	::gDoHeatingZone3 AT %QX."X20DOF322".DigitalOutput11; (*24 VDC / 0.5 A, source (Heat zone 3)*)
+	::gAiHeatingZone1 AT %IW."X20AT6402".Temperature01;
+	::gAiHeatingZone2 AT %IW."X20AT6402".Temperature02;
+	::gAiHeatingZone3 AT %IW."X20AT6402".Temperature03;
+	::gAiIRSensor AT %IW."X20AT6402".Temperature05;
+	::gDoVacuum AT %QX."X20DOF322".DigitalOutput02;
+	::gDoFreeItem AT %QX."X20DOF322".DigitalOutput04;
+	::gDoMaterial AT %QX."X20DOF322".DigitalOutput06;
+	::gDoHeating AT %QX."X20DOF322".DigitalOutput08;
+	::gDoFrameDown AT %QX."X20DOF322".DigitalOutput10;
+	::gDoFrameUp AT %QX."X20DOF322".DigitalOutput12;
+	::gDoFormUp AT %QX."X20DOF322".DigitalOutput14;
+	::gDoLedControl AT %QX."X20DOF322".DigitalOutput15;
+	::gDoCooling AT %QX."X20DOF322".DigitalOutput01;
+	::gDoAirPump AT %QX."X20DOF322".DigitalOutput03;
+	::gDiSafe_OK AT %IX."X20DIF371".DigitalInput01;
+	::gDiQF1_OK AT %IX."X20DIF371".DigitalInput11;
+	::gDiQF2_OK AT %IX."X20DIF371".DigitalInput13;
+	::gDiQF3_OK AT %IX."X20DIF371".DigitalInput15;
+	::gDiButtonStart AT %IX."X20DIF371".DigitalInput03;
+	::gDiHeatingLow AT %IX."X20DIF371".DigitalInput02;
+	::gDiHeatingHigh AT %IX."X20DIF371".DigitalInput04;
+	::gDiFrameUpPoistion AT %IX."X20DIF371".DigitalInput06;
+	::gDiFrameDownPosition AT %IX."X20DIF371".DigitalInput08;
+	::gDiFormDownPosition AT %IX."X20DIF371".DigitalInput10;
+	::gDiFormUpPosition AT %IX."X20DIF371".DigitalInput12;
 END_VAR

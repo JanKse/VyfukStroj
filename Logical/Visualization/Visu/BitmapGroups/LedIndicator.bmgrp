@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.10.2.37"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="LedIndicator">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="2"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="1205" Value="Source[local].Bitmap[LedOff]"/>
+    <BitmapRef ID="1206" Value="Source[local].Bitmap[LedOn]"/>
+    <BitmapRef ID="1235" Value="Source[local].Bitmap[windOn]"/>
+    <BitmapRef ID="1236" Value="Source[local].Bitmap[snowflakeOn]"/>
+    <BitmapRef ID="1237" Value="Source[local].Bitmap[rectangleOn]"/>
+    <BitmapRef ID="1238" Value="Source[local].Bitmap[pumpOn]"/>
+    <BitmapRef ID="1239" Value="Source[local].Bitmap[heaterOn]"/>
+    <BitmapRef ID="1240" Value="Source[local].Bitmap[customOn]"/>
+    <BitmapRef ID="1241" Value="Source[local].Bitmap[windOff]"/>
+    <BitmapRef ID="1242" Value="Source[local].Bitmap[snowflakeOff]"/>
+    <BitmapRef ID="1245" Value="Source[local].Bitmap[pumpOff]"/>
+    <BitmapRef ID="1246" Value="Source[local].Bitmap[heaterOff]"/>
+    <BitmapRef ID="1247" Value="Source[local].Bitmap[customOff]"/>
+    <BitmapRef ID="1320" Value="Source[local].Bitmap[rectangleDownOff]"/>
+    <BitmapRef ID="1321" Value="Source[local].Bitmap[rectangleDownOn]"/>
+    <BitmapRef ID="1322" Value="Source[local].Bitmap[rectangleUpOff]"/>
+    <BitmapRef ID="1323" Value="Source[local].Bitmap[rectangleUpOn]"/>
+    <BitmapRef ID="1324" Value="Source[local].Bitmap[ItemOn]"/>
+    <BitmapRef ID="1325" Value="Source[local].Bitmap[materialOn]"/>
+    <BitmapRef ID="1326" Value="Source[local].Bitmap[materialOff]"/>
+    <BitmapRef ID="1327" Value="Source[local].Bitmap[ItemOff]"/>
+    <BitmapRef ID="1332" Value="None"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="1205" Value="1"/>
+    <Index ID="1206" Value="2"/>
+    <Index ID="1235" Value="3"/>
+    <Index ID="1236" Value="4"/>
+    <Index ID="1237" Value="5"/>
+    <Index ID="1238" Value="6"/>
+    <Index ID="1239" Value="7"/>
+    <Index ID="1240" Value="8"/>
+    <Index ID="1241" Value="9"/>
+    <Index ID="1242" Value="10"/>
+    <Index ID="1245" Value="12"/>
+    <Index ID="1246" Value="13"/>
+    <Index ID="1247" Value="14"/>
+    <Index ID="1320" Value="11"/>
+    <Index ID="1321" Value="15"/>
+    <Index ID="1322" Value="16"/>
+    <Index ID="1323" Value="17"/>
+    <Index ID="1324" Value="18"/>
+    <Index ID="1325" Value="19"/>
+    <Index ID="1326" Value="20"/>
+    <Index ID="1327" Value="21"/>
+    <Index ID="1332" Value="0"/>
+  </IndexMap>
+</BitmapGroup>

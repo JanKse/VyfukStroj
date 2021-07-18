@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.10.2.37"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpAlarmBypassState">
+  <Property Name="Description" Value="Texts for the bypass state of an alarm - index 0-1 long, index 10-11 short"/>
+  <Property Name="Index" Value="1153"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="cs">
+    <Text ID="208256" Value="Bypassed"/>
+    <Text ID="208257" Value="Not Bypassed"/>
+    <Text ID="208258" Value="nB"/>
+    <Text ID="208259" Value="B"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="208256" Value="Gebrückt"/>
+    <Text ID="208257" Value="Entbrückt"/>
+    <Text ID="208258" Value="nB"/>
+    <Text ID="208259" Value="B"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="208256" Value="1"/>
+    <Index ID="208257" Value="0"/>
+    <Index ID="208258" Value="10"/>
+    <Index ID="208259" Value="11"/>
+  </IndexMap>
+</TextGroup>

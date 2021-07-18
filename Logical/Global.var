@@ -1,5 +1,36 @@
 VAR
+	gDoMaterial : BOOL;
+	gDiButtonStart : BOOL;
+	gDiQF2_OK : BOOL;
+	gDoCooling : BOOL;
+	gDoAirPump : BOOL;
+	gDiSafe_OK : BOOL;
+	gDiQF1_OK : BOOL;
+	gDiFrameUpPoistion : BOOL;
+	gDiHeatingLow : BOOL;
+	gDiHeatingHigh : BOOL;
+	gDoFormUp : BOOL;
+	gDiQF3_OK : BOOL;
+	gDoLedControl : BOOL;
+	gDoHeatingZone2 : BOOL;
+	gDiFrameDownPosition : BOOL;
+	gDoHeatingZone1 : BOOL;
+	gDoVacuum : BOOL;
+	gDoFreeItem : BOOL;
+	gDoHeatingZone3 : BOOL;
+	gDoFrameDown : BOOL;
+	gDoFrameUp : BOOL;
+	gDiFormDownPosition : BOOL;
+	gDiFormUpPosition : BOOL;
+	gDoHeating : BOOL;
+	gAiIRSensor : INT;
+	gAiHeatingZone1 : INT;
+	gAiHeatingZone3 : INT;
+	gAiHeatingZone2 : INT;
 	gAVGTemperature : INT;
+	gStateOfProcess : StateOfProcessType;
 	gSetTemperatures : TemperaturesType;
 	gSetTimersValues : TimersType;
+	gRecipeLoaded : BOOL;
+	gCurrentTemperatures : TemperaturesType;
 END_VAR

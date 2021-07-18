@@ -5,4 +5,7 @@ VAR
 	cmdLoadRecipes : BOOL;
 	cmdSaveRecipes : BOOL;
 	cmdErrorReset : BOOL;
+	RecipeUI : MpRecipeUI;
+	UISetup : MpRecipeUISetupType;
+	UIConnect : MpRecipeUIConnectType;
 END_VAR

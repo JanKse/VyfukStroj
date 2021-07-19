@@ -38,6 +38,14 @@
     <BitmapRef ID="1204" Value="Source[local].Bitmap[alarmButton]"/>
     <BitmapRef ID="1328" Value="Source[local].Bitmap[pencil]"/>
     <BitmapRef ID="1329" Value="Source[local].Bitmap[refresh]"/>
+    <BitmapRef ID="1378" Value="Source[local].Bitmap[trash]"/>
+    <BitmapRef ID="1379" Value="Source[local].Bitmap[download]"/>
+    <BitmapRef ID="1380" Value="Source[local].Bitmap[upload]"/>
+    <BitmapRef ID="1381" Value="Source[local].Bitmap[uploadBlue]"/>
+    <BitmapRef ID="1382" Value="Source[local].Bitmap[downloadBlue]"/>
+    <BitmapRef ID="1383" Value="Source[local].Bitmap[trashBlue]"/>
+    <BitmapRef ID="1384" Value="Source[local].Bitmap[pencilBlue]"/>
+    <BitmapRef ID="1385" Value="Source[local].Bitmap[refreshBlue]"/>
   </BitmapLayer>
   <IndexMap>
     <Index ID="954" Value="0"/>
@@ -73,5 +81,13 @@
     <Index ID="1204" Value="19"/>
     <Index ID="1328" Value="20"/>
     <Index ID="1329" Value="32"/>
+    <Index ID="1378" Value="33"/>
+    <Index ID="1379" Value="34"/>
+    <Index ID="1380" Value="35"/>
+    <Index ID="1381" Value="36"/>
+    <Index ID="1382" Value="37"/>
+    <Index ID="1383" Value="38"/>
+    <Index ID="1384" Value="39"/>
+    <Index ID="1385" Value="40"/>
   </IndexMap>
 </BitmapGroup>

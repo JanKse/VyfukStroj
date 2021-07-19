@@ -2,10 +2,10 @@ VAR_CONFIG
 	::gDoHeatingZone1 AT %QX."X20DOF322".DigitalOutput05; (*24 VDC / 0.5 A, source (Heat zone 1)*)
 	::gDoHeatingZone2 AT %QX."X20DOF322".DigitalOutput07; (*24 VDC / 0.5 A, source (Heat zone 2)*)
 	::gDoHeatingZone3 AT %QX."X20DOF322".DigitalOutput11; (*24 VDC / 0.5 A, source (Heat zone 3)*)
-	::gAiHeatingZone1 AT %IW."X20AT6402".Temperature01;
-	::gAiHeatingZone2 AT %IW."X20AT6402".Temperature02;
-	::gAiHeatingZone3 AT %IW."X20AT6402".Temperature03;
-	::gAiIRSensor AT %IW."X20AT6402".Temperature05;
+	::gCurrentTemperatures.temperatureHeatZone1 AT %IW."X20AT6402".Temperature01;
+	::gCurrentTemperatures.temperatureHeatZone2 AT %IW."X20AT6402".Temperature02;
+	::gCurrentTemperatures.temperatureHeatZone3 AT %IW."X20AT6402".Temperature03;
+	::gCurrentTemperatures.temperatureIRSensor AT %IW."X20AT6402".Temperature05;
 	::gDoVacuum AT %QX."X20DOF322".DigitalOutput02;
 	::gDoFreeItem AT %QX."X20DOF322".DigitalOutput04;
 	::gDoMaterial AT %QX."X20DOF322".DigitalOutput06;

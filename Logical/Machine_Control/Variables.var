@@ -8,17 +8,19 @@ VAR
 	cmdAirPump : BOOL;
 	cmdHeating : BOOL;
 	cmdFrameUp : BOOL;
-	HeatingTOFValue : REAL;
-	BlowingTONValue : REAL;
-	BubbleTOFValue : REAL;
-	FormingTONValue : REAL;
-	FormLockingTONValue : REAL;
-	BlowingTOFValue : REAL;
 	TOFBubble : TOF;
 	TOFBlowing : TOF;
 	TOFHeating : TOF;
 	TONForming : TON;
 	TONBlowing : TON;
 	TONFormLocking : TON;
+	cmdBlowing : BOOL;
+	cmdFormDown : BOOL;
+	cmdForming : BOOL;
 	cmdBubble : BOOL;
+	TOFForming : TOF;
+	TONOdfuk : TON;
+	TOFOdfuk : TOF;
+	cmdOdfuk : BOOL;
+	TONFormUp : TON;
 END_VAR

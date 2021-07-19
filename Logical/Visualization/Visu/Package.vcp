@@ -218,6 +218,15 @@
     <Source File="Bitmaps\ItemOff.bminfo"/>
     <Source File="Bitmaps\pencil.bminfo"/>
     <Source File="Bitmaps\refresh.bminfo"/>
+    <Source File="Bitmaps\trash.bminfo"/>
+    <Source File="Bitmaps\download.bminfo"/>
+    <Source File="Bitmaps\upload.bminfo"/>
+    <Source File="Bitmaps\Bitmap_3.bminfo"/>
+    <Source File="Bitmaps\uploadBlue.bminfo"/>
+    <Source File="Bitmaps\downloadBlue.bminfo"/>
+    <Source File="Bitmaps\trashBlue.bminfo"/>
+    <Source File="Bitmaps\pencilBlue.bminfo"/>
+    <Source File="Bitmaps\refreshBlue.bminfo"/>
     <Source File="BitmapGroups\AlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\AlarmBypassState.bmgrp"/>
     <Source File="BitmapGroups\AlarmEvent.bmgrp"/>

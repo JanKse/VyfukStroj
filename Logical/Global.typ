@@ -5,8 +5,9 @@ TYPE
 		DefaultState,
 		Start,
 		BubbleANDFormDownDelay,
-		PreForming,
-		Forming
+		StartForming,
+		CoolingANDBlowingDelay,
+		Finishing
 		);
 	TemperaturesType : 	STRUCT 
 		temperatureHeatZone1 : INT;
@@ -22,5 +23,9 @@ TYPE
 		BubbleTOFValue : REAL;
 		FormingTONValue : REAL;
 		FormLockingTONValue : REAL;
+		FormingTOFVALUE : REAL;
+		OdfukTOFValue : REAL;
+		OdfukTONValue : REAL;
+		FormUpTONValue : REAL;
 	END_STRUCT;
 END_TYPE

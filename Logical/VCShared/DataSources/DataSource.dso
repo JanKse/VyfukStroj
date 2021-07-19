@@ -5666,18 +5666,6 @@
     <Folder Name="Machine_Control">
       <Property Name="Description" Value=""/>
       <Property Name="FolderType" Value="Program"/>
-      <DataPoint Name="BlowingTOFValue">
-        <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="Visualization\Visu"/>
-        <Property Name="DPLimit" Value="None"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="PLCType" Value="REAL"/>
-        <Property Name="PLCUnit" Value="None"/>
-        <Property Name="UnitGroup" Value="None"/>
-        <Property Name="UpdateTime" Value="Default"/>
-        <Property Name="UserID" Value="None"/>
-        <Property Name="VCType" Value="SCALED"/>
-      </DataPoint>
       <DataPoint Name="cmdFormUp">
         <Property Name="ConnectedBySharedResource" Value="False"/>
         <Property Name="ConnectingVisus" Value="Visualization\Visu"/>
@@ -6207,6 +6195,7 @@
       </DataPoint>
       <DataPoint Name="BubbleTOFValue">
         <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Visualization\Visu"/>
         <Property Name="DPLimit" Value="Default"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="REAL"/>
@@ -6218,6 +6207,7 @@
       </DataPoint>
       <DataPoint Name="FormingTONValue">
         <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Visualization\Visu"/>
         <Property Name="DPLimit" Value="Default"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="REAL"/>
@@ -6229,6 +6219,55 @@
       </DataPoint>
       <DataPoint Name="FormLockingTONValue">
         <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Visualization\Visu"/>
+        <Property Name="DPLimit" Value="Default"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="Source[relative:UnitGroup].Unit[second]"/>
+        <Property Name="UnitGroup" Value="Source[global].UnitGroup[Time]"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="FormingTOFVALUE">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Visualization\Visu"/>
+        <Property Name="DPLimit" Value="Default"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="Source[relative:UnitGroup].Unit[second]"/>
+        <Property Name="UnitGroup" Value="Source[global].UnitGroup[Time]"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="OdfukTONValue">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Visualization\Visu"/>
+        <Property Name="DPLimit" Value="Default"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="Source[relative:UnitGroup].Unit[second]"/>
+        <Property Name="UnitGroup" Value="Source[global].UnitGroup[Time]"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="OdfukTOFValue">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Visualization\Visu"/>
+        <Property Name="DPLimit" Value="Default"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="Source[relative:UnitGroup].Unit[second]"/>
+        <Property Name="UnitGroup" Value="Source[global].UnitGroup[Time]"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="FormUpTONValue">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Visualization\Visu"/>
         <Property Name="DPLimit" Value="Default"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="REAL"/>

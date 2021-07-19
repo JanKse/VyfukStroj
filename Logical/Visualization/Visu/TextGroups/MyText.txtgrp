@@ -5,8 +5,8 @@
   <Property Name="Index" Value="4"/>
   <TextSnippets/>
   <TextLayer LanguageId="cs">
-    <Text ID="221581" Value="VYP."/>
-    <Text ID="221582" Value="ZAP."/>
+    <Text ID="221581" Value="VYP"/>
+    <Text ID="221582" Value="ZAP"/>
   </TextLayer>
   <TextLayer LanguageId="de">
     <Text ID="221581" Value=""/>

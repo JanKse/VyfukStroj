@@ -8,8 +8,6 @@
     <Object Type="Program" Language="IEC">Machine_Control</Object>
     <Object Type="Program" Language="IEC">VizControls</Object>
     <Object Type="Program" Language="IEC">Recipes</Object>
-    <Object Type="File">TurnOnHeating.st</Object>
-    <Object Type="File">TurnOfHeating.st</Object>
     <Object Type="Package">Visualization</Object>
   </Objects>
 </Package>

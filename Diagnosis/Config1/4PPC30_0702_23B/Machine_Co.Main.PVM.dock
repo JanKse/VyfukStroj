@@ -1,51 +1,51 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Machine_Co 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=13 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=41 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
-                              gDoAirPump                                     BOOL    3 "                                                            TRUE"    0    1    1    2    0    0         
-                              gDoCooling                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
-                               gDoFormUp                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
-                            gDoFrameDown                                     BOOL    3 "                                                            TRUE"    0    1    1    2    0    0         
-                              gDoFrameUp                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
-                             gDoFreeItem                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
-                         gDoHeatingZone1                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
-                         gDoHeatingZone2                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
-                         gDoHeatingZone3                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
-                             gDoMaterial                                     BOOL    3 "                                                            TRUE"    0    1    1    2    0    0         
-                               gDoVacuum                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
-                         gStateOfProcess                                     DINT    0 "                                                               2"    0    4    1   10    0    0 e,0,Defa
-
                           gDiButtonStart                                     BOOL    2 "                                                            TRUE"    0    1    1    2    0    0         
-                          gDiHeatingHigh                                     BOOL    2 "                                                            TRUE"    0    1    1    2    0    0         
+                     gDiFormDownPosition                                     BOOL    2 "                                                            TRUE"    0    1    1    2    0    0         
                     gDiFrameDownPosition                                     BOOL    2 "                                                            TRUE"    0    1    1    2    0    0         
-                              TOFHeating                                      TOF    0 "                                                               *"    0   24    1    0    1    1         
-                                      IN                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                                      PT                                     TIME    0 "                                                           T#10s"    1   12    1    1    0    0         
-                                       Q                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                                      ET                                     TIME    0 "                                                           T#10s"    1   12    1    1    0    0         
-                                       M                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                               StartTime                                     TIME    0 "                                                 T#01m_15s_170ms"    1   12    1    1    0    0         
-                                 Restart                                    UDINT    0 "                                                              29"    1    7    1   10    0    0         
-                              TONBlowing                                      TON    0 "                                                               *"    0   24    1    0    1    1         
+                          gDiHeatingHigh                                     BOOL    2 "                                                            TRUE"    0    1    1    2    0    0         
+                           gDiHeatingLow                                     BOOL    2 "                                                            TRUE"    0    1    1    2    0    0         
+                         gStateOfProcess                                     DINT    0 "                                                               5"    0    4    1   10    0    0 e,0,Defa
+
+                              TOFHeating                                      TOF    0 "                                                               *"    0   24    1    0    1    0         
+                                      IN                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                      PT                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                                       Q                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                      ET                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                                       M                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                               StartTime                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                                 Restart                                    UDINT    0 "                                                               *"    1    7    1   10    0    0         
+                          TONFormLocking                                      TON    0 "                                                               *"    0   24    1    0    1    0         
+                                      IN                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                      PT                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                                       Q                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                      ET                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                               StartTime                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                                       M                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                 Restart                                    UDINT    0 "                                                               *"    1    7    1   10    0    0         
+                              TONForming                                      TON    0 "                                                               *"    0   24    1    0    1    0         
                                       IN                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
-                                      PT                                     TIME    0 "                                                           T#07s"    1   12    1    1    0    0         
+                                      PT                                     TIME    0 "                                                           T#20s"    1   12    1    1    0    0         
                                        Q                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
-                                      ET                                     TIME    0 "                                                           T#07s"    1   12    1    1    0    0         
-                               StartTime                                     TIME    0 "                                                 T#01m_30s_070ms"    1   12    1    1    0    0         
+                                      ET                                     TIME    0 "                                                           T#20s"    1   12    1    1    0    0         
+                               StartTime                                     TIME    0 "                                                 T#02m_01s_470ms"    1   12    1    1    0    0         
                                        M                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
-                                 Restart                                    UDINT    0 "                                                              29"    1    7    1   10    0    0         
-                              TOFBlowing                                      TOF    0 "                                                               *"    0   24    1    0    1    1         
+                                 Restart                                    UDINT    0 "                                                              48"    1    7    1   10    0    0         
+                               TOFBubble                                      TOF    0 "                                                               *"    0   24    1    0    1    0         
                                       IN                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                                      PT                                     TIME    0 "                                                           T#07s"    1   12    1    1    0    0         
-                                       Q                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                                      ET                                     TIME    0 "                                                           T#07s"    1   12    1    1    0    0         
+                                      PT                                     TIME    0 "                                                           T#15s"    1   12    1    1    0    0         
+                                       Q                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                                      ET                                     TIME    0 "                                                     T#12s_200ms"    1   12    1    1    0    0         
                                        M                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                               StartTime                                     TIME    0 "                                                 T#01m_37s_120ms"    1   12    1    1    0    0         
-                                 Restart                                    UDINT    0 "                                                              29"    1    7    1   10    0    0         
+                               StartTime                                     TIME    0 "                                                 T#02m_09s_270ms"    1   12    1    1    0    0         
+                                 Restart                                    UDINT    0 "                                                              48"    1    7    1   10    0    0         
                                cmdBubble                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
-                        gSetTimersValues                               TimersType    0 "                                                               *"    0   24    1    0    0    0         
-                         HeatingTOFValue                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                         BlowingTONValue                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                         BlowingTOFValue                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                          BubbleTOFValue                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                         FormingTONValue                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                     FormLockingTONValue                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
+                              TOFForming                                      TOF    0 "                                                               *"    0   24    1    0    1    1         
+                                      IN                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                      PT                                     TIME    0 "                                                           T#15s"    1   12    1    1    0    0         
+                                       Q                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                      ET                                     TIME    0 "                                                           T#15s"    1   12    1    1    0    0         
+                                       M                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                               StartTime                                     TIME    0 "                                                 T#02m_21s_570ms"    1   12    1    1    0    0         
+                                 Restart                                    UDINT    0 "                                                              48"    1    7    1   10    0    0         

@@ -1,0 +1,8 @@
+VAR
+	HeatZone1HystUpperLimit : REAL;
+	HeatZone2HystUpperLimit : REAL;
+	HeatZone1HystDownLimit : REAL;
+	HeatZone2HystDownLimit : REAL;
+	HeatZone3HystDownLimit : REAL;
+	HeatZone3HystUpperLimit : REAL;
+END_VAR

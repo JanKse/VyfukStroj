@@ -1,0 +1,14 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Machine_Co 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=0 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                             cmdFreeItem                                     BOOL    0 "                                                               *"    0    1    1    2    1    0         
+                              cmdFrameUp                                     BOOL    0 "                                                               *"    0    1    1    2    1    0         
+                       gDiFormUpPosition                                     BOOL    0 "                                                               *"    0    1    1    2    0    0         
+                            cmdFrameDown                                     BOOL    0 "                                                               *"    0    1    1    2    1    0         
+                              gDoHeating                                     BOOL    0 "                                                               *"    0    1    1    2    0    0         
+                              cmdHeating                                     BOOL    0 "                                                               *"    0    1    1    2    1    0         
+                    gDiFrameDownPosition                                     BOOL    0 "                                                               *"    0    1    1    2    0    0         
+                      gDiFrameUpPoistion                                     BOOL    0 "                                                               *"    0    1    1    2    0    0         
+                          gDiHeatingBack                                     BOOL    0 "                                                               *"    0    1    1    2    0    0         
+                         gDiHeatingFront                                     BOOL    0 "                                                               *"    0    1    1    2    0    0         
+                               cmdFormUp                                     BOOL    0 "                                                               *"    0    1    1    2    1    0         

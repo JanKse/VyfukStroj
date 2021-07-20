@@ -30,7 +30,7 @@
       </DataPoint>
       <DataPoint Name="BackLight">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value=""/>
+        <Property Name="ConnectingVisus" Value="Visualization\Visu"/>
         <Property Name="Description" Value="0 = backlight off / 1 = backlight on"/>
         <Property Name="PLCType" Value="USINT"/>
         <Property Name="UpdateTime" Value="Default"/>

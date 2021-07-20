@@ -1,0 +1,32 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Machine_Co 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=7 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                              gDoAirPump                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
+                              gDoCooling                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
+                               gDoFormUp                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
+                              cmdAirPump                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                              cmdBlowing                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                               cmdBubble                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                              cmdCooling                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                               cmdFormUp                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                              cmdForming                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                            cmdFrameDown                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                              cmdFrameUp                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                             cmdFreeItem                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                              cmdHeating                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                         cmdHeatingZone1                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                         cmdHeatingZone2                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                         cmdHeatingZone3                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                             cmdMaterial                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                               cmdVacuum                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                            gDoFrameDown                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
+                              gDoFrameUp                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
+                             gDoFreeItem                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
+                              gDoHeating                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
+                         gDoHeatingZone1                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
+                         gDoHeatingZone2                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
+                         gDoHeatingZone3                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
+                             gDoMaterial                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
+                               gDoVacuum                                     BOOL    3 "                                                           FALSE"    0    1    1    2    0    0         
+                         gStateOfProcess                                     DINT    0 "                                                               0"    0    4    1   10    0    0 e,0,Manu
+

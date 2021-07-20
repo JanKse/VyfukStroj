@@ -1,53 +1,25 @@
-
 PROGRAM _INIT
-	//At beginning of cyclus turn everything off
-	cmdAirPump	:= FALSE;
-	cmdCooling	:= FALSE;
-	cmdFrameDown:= FALSE;
-	cmdFrameUp	:= FALSE;
-	cmdFreeItem	:= FALSE;
-	cmdHeating 	:= FALSE;
-	cmdMaterial := FALSE;
-	cmdVacuum	:= FALSE;
-	cmdFormUp 	:= FALSE;
-	gDoAirPump := cmdAirPump;
-	gDoCooling := cmdCooling;
-	gDoFormUp := cmdFormUp;
-	gDoFrameDown := cmdFrameDown;
-	gDoFrameUp := cmdFrameUp;
-	gDoFreeItem := cmdFreeItem;
-	gDoHeatingZone1 := cmdHeating;
-	gDoHeatingZone2 := cmdHeating;
-	gDoHeatingZone3 := cmdHeating;
-	gDoMaterial := cmdMaterial;
-	gDoVacuum := cmdVacuum;
-	//------------------------------------------------------------------------------------------------
 	//Start state of cyclus
-	gStateOfProcess := DefaultState;
+	gStateOfProcess := ManualMode;
 	//--------------------------------------------------------------------------------------------
 END_PROGRAM
 
-PROGRAM _CYCLIC
-	
-	CASE gStateOfProcess OF
-		DefaultState :
-			//Manual mode
-			cmdAirPump;
-			cmdCooling;
-		    cmdFormUp;
-			cmdFrameDown;
-			cmdFrameUp;
-			cmdFreeItem;
-			cmdMaterial;
-			cmdVacuum;
-			//--------------------------------------------------------------
-			IF (gRecipeLoaded = TRUE )THEN
-				cmdAirPump := gDiButtonStart;
-				cmdFrameDown := gDiButtonStart;
-				IF (gDiButtonStart = TRUE) AND (gDiFrameDownPosition = TRUE) THEN
-					gStateOfProcess := Start;
-				END_IF;
-			END_IF;		
+PROGRAM _CYCLIC	
+	ManualModeControl;
+(*	CASE gStateOfProcess OF
+		ManualMode:
+			ManualModeControl;
+		
+		IF (gDiButtonStart = TRUE) AND (gRecipeLoaded = TRUE) THEN
+			cmdAirPump := gDiButtonStart;
+			cmdFrameDown := gDiButtonStart;
+			IF (gDiFrameDownPosition = TRUE) THEN
+				//cmdAirPump:= TRUE/FALSE; ??
+				//cmdFrameDown:=TRUE/FALSE; ??
+				gStateOfProcess := Start;
+			END_IF;
+		END_IF;
+					
 		Start:
 			cmdHeating := TRUE;
 			//cmdFrameDown :=TRUE / FALSE;
@@ -88,7 +60,7 @@ PROGRAM _CYCLIC
 			TONFormLocking.IN := TRUE;
 			TONFormLocking.PT := REAL_TO_TIME(gSetTimersValues.FormLockingTONValue * 1000);
 			TONFormLocking();
-			cmdFormDown:= TONFormLocking.Q; // cmdFormUp ?? 
+			cmdFormUp:= NOT(TONFormLocking.Q); // cmdFormUp ?? 
 			//---------------------------------------------
 			//------------ZpoûdenÌ formovanÌ nastastavenÈ na x sekund -----------------------
 			TONForming.IN := TONFormLocking.Q;
@@ -109,10 +81,10 @@ PROGRAM _CYCLIC
 			//AK je forma dole vypni bublinu
 			IF (gDiFormDownPosition = TRUE) THEN
 				cmdBubble := FALSE;
-			//--------------------------------------------------
+				//--------------------------------------------------
 			END_IF;
 			//Ak mÙûme zaËaù formovaù a bublina je vypnuta prejdi na krok formovanie
-			IF (TONForming.Q = TRUE) AND (cmdBubble = FALSE) THEN
+			IF (cmdFormUp = FALSE) AND (cmdBubble = FALSE) AND (gDiFormDownPosition = TRUE) THEN
 				gStateOfProcess := StartForming;	
 			END_IF;
 			//--------------------------------------------------
@@ -122,7 +94,7 @@ PROGRAM _CYCLIC
 			TOFForming.IN := EDGEPOS(cmdForming);
 			TOFForming.PT := REAL_TO_TIME(gSetTimersValues.FormingTOFVALUE * 1000);
 			TOFForming();
-			cmdForming:=TOFForming.Q;
+			cmdForming:=TOFForming.Q; //asi vacuum
 			//--------------
 			//Ak to skonËÌ formovanie prejdi na ÔalöÌ krok
 			IF (cmdForming = FALSE) THEN
@@ -132,49 +104,40 @@ PROGRAM _CYCLIC
 			//Zapni chladnie
 			//Zapni oneskorenie odfuku na x sekund
 			cmdCooling := TRUE;
-			TONOdfuk.IN := TRUE;
-			TONOdfuk.PT := REAL_TO_TIME(gSetTimersValues.OdfukTONValue * 1000);
-			TONOdfuk();
+			TONFreeItem.IN := TRUE;
+			TONFreeItem.PT := REAL_TO_TIME(gSetTimersValues.FreeItemTONValue * 1000);
+			TONFreeItem();
 			//Ak vyprÌ Ëas oneskorenia prejdi na ÔaæöÌ krok
-			IF (TONOdfuk.Q = TRUE) THEN
-	  			gStateOfProcess := Finishing;
+			IF (TONFreeItem.Q = TRUE) THEN
+				gStateOfProcess := Finishing;
 			END_IF;
 		Finishing:
 			//Zapni odfuk na x sekund
-			cmdOdfuk:= TRUE;
-			TOFOdfuk.IN := cmdOdfuk;
-			TOFOdfuk.PT := REAL_TO_TIME(gSetTimersValues.OdfukTOFValue * 1000);
-			TOFOdfuk();
-			cmdOdfuk := TOFOdfuk.Q;
+			cmdFreeItem:= TRUE;
+			TOFFreeItem.IN := cmdFreeItem;
+			TOFFreeItem.PT := REAL_TO_TIME(gSetTimersValues.FreeItemTOFValue * 1000);
+			TOFFreeItem();
+			cmdFreeItem := TOFFreeItem.Q;
 			//------------
 			//Oneskorenie otvorenia formy nastavenÈ na x sekund
 			TONFormUp.IN := TRUE;
 			TONFormUp.PT := REAL_TO_TIME(gSetTimersValues.FormUpTONValue);
 			TONFormUp();
 			IF TONFormUp.Q THEN
-				cmdFormDown:=FALSE; //cmdFormUp
+				cmdFormUp:=TRUE; //cmdFormUp
 				cmdCooling:=FALSE;
 				cmdFrameDown := FALSE;
 				cmdFrameUp := TRUE;
 			END_IF;
-			IF (gDiFormUpPosition = TRUE) THEN
-	  			gStateOfProcess := DefaultState;
+			IF (gDiFrameUpPoistion = TRUE) THEN
+				cmdFrameUp := FALSE;
+				gStateOfProcess := DefaultState;
 			END_IF;
 		
 			
 	END_CASE;	
 		
-	gDoAirPump := cmdAirPump;
-	gDoCooling := cmdCooling;
-	gDoFormUp := cmdFormUp;
-	gDoFrameDown := cmdFrameDown;
-	gDoFrameUp := cmdFrameUp;
-	gDoFreeItem := cmdFreeItem;
-	gDoHeatingZone1 := cmdHeating;
-	gDoHeatingZone2 := cmdHeating;
-	gDoHeatingZone3 := cmdHeating;
-	gDoMaterial := cmdMaterial;
-	gDoVacuum := cmdVacuum;
+	*)
 	
 END_PROGRAM
 

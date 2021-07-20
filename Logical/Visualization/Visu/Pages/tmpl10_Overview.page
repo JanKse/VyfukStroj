@@ -183,7 +183,7 @@
           <Property Name="Height" Value="50"/>
           <Property Name="Left" Value="190"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="90"/>
+          <Property Name="Top" Value="100"/>
           <Property Name="Width" Value="590"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_1">
@@ -200,7 +200,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="7"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="101"/>
+          <Property Name="Top" Value="111"/>
           <Property Name="Width" Value="192"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_2">
@@ -212,11 +212,11 @@
           <Property Name="Height" Value="28"/>
           <Property Name="Left" Value="410"/>
           <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value=""/>
+          <Property Name="SimulationValue" Value="test"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Recipes.MpRecipeXml_0.Info.LastLoadedRecipe]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="101"/>
+          <Property Name="Top" Value="111"/>
           <Property Name="Width" Value="192"/>
         </Control>
       </Controls>
@@ -239,13 +239,13 @@
       <Property Name="Z-Order" Value="3"/>
       <TextGroup>
         <TextLayer LanguageId="cs">
-          <Text ID="215301" Value="Zóna 3"/>
+          <Text ID="224523" Value="Zóna 3"/>
         </TextLayer>
         <TextLayer LanguageId="de">
-          <Text ID="215301" Value="Text_1"/>
+          <Text ID="224523" Value="Text_1"/>
         </TextLayer>
         <IndexMap>
-          <Index ID="215301" Value="3"/>
+          <Index ID="224523" Value="4"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -254,18 +254,18 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
-          <Property Name="Height" Value="60"/>
-          <Property Name="Left" Value="196"/>
+          <Property Name="Height" Value="50"/>
+          <Property Name="Left" Value="190"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="321"/>
-          <Property Name="Width" Value="590"/>
+          <Property Name="Top" Value="320"/>
+          <Property Name="Width" Value="450"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_1">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="300"/>
+          <Property Name="Left" Value="410"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -273,7 +273,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="335"/>
+          <Property Name="Top" Value="330"/>
           <Property Name="UnitText" Value="Abbreviation"/>
           <Property Name="UnitTextAlignment" Value="Left"/>
           <Property Name="UnitTextPosition" Value="Right"/>
@@ -289,60 +289,53 @@
           <Property Name="Font" Value="Source[local].Font[Input]"/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="28"/>
-          <Property Name="Left" Value="210"/>
+          <Property Name="Left" Value="212"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="3"/>
+          <Property Name="TextIndexOffset" Value="4"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="336"/>
+          <Property Name="Top" Value="331"/>
           <Property Name="Width" Value="70"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_1">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[LedIndicator]"/>
-          <Property Name="BitmapIndex" Value="1"/>
-          <Property Name="BitmapSource" Value="BitmapGroup"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="40"/>
-          <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="435"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Visualization.VizControls.HeatingZone3ReadyIcon]"/>
+          <Property Name="Left" Value="580"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="330"/>
+          <Property Name="Top" Value="325"/>
           <Property Name="Width" Value="40"/>
         </Control>
-        <Control ClassId="0x00001012" Name="Scale_1">
-          <Property Name="BackColor" Value="16"/>
-          <Property Name="Border" Value="None"/>
+        <Control ClassId="0x00001004" Name="Text_3">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[BorderOff]"/>
           <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
+          <Property Name="Description" Value="B"/>
           <Property Name="Font" Value="Source[local].Font[Status]"/>
-          <Property Name="ForeColor" Value="254"/>
-          <Property Name="Height" Value="40"/>
-          <Property Name="Left" Value="490"/>
-          <Property Name="MajorPitchLines" Value="4"/>
-          <Property Name="MarkerBitmap" Value="Source[local].Bitmap[aa]"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="100"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="MinorPitchLines" Value="5"/>
-          <Property Name="MinorPitchLinesLength" Value="5"/>
-          <Property Name="Orientation" Value="Bottom"/>
-          <Property Name="RangeColor" Value="237"/>
-          <Property Name="RangeEndDatapoint" Value="None"/>
-          <Property Name="RangeEndValue" Value="100"/>
-          <Property Name="RangeStartDatapoint" Value="None"/>
-          <Property Name="RangeStartValue" Value="0"/>
-          <Property Name="RangeWidth" Value="5"/>
-          <Property Name="Spacing" Value="28"/>
+          <Property Name="ForeColor" Value="50"/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="HighlightingBackColor" Value="Source[embedded].Property[BackColor]"/>
+          <Property Name="HighlightingBorder" Value="Source[local].Border[BorderOn]"/>
+          <Property Name="HighlightingDatapoint" Value="Source[global].Variable[DataSource.Visualization.VizControls.HeatingOnOfText3]"/>
+          <Property Name="HighlightingForeColor" Value="221"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Visualization.VizControls.HeatingOnOfText3]"/>
+          <Property Name="Left" Value="310"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="VYP."/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextGroup" Value="Source[local].TextGroup[MyText]"/>
+          <Property Name="TextIndexOffset" Value="0"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
           <Property Name="Top" Value="330"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gCurrentTemperatures.temperatureHeatZone3]"/>
-          <Property Name="ValueSimulation" Value="0"/>
-          <Property Name="Width" Value="270"/>
+          <Property Name="Width" Value="60"/>
         </Control>
       </Controls>
       <KeyMapping/>
@@ -364,13 +357,13 @@
       <Property Name="Z-Order" Value="4"/>
       <TextGroup>
         <TextLayer LanguageId="cs">
-          <Text ID="215297" Value="Zóna 2"/>
+          <Text ID="224517" Value="Zóna 2"/>
         </TextLayer>
         <TextLayer LanguageId="de">
-          <Text ID="215297" Value="Text_1"/>
+          <Text ID="224517" Value="Text_1"/>
         </TextLayer>
         <IndexMap>
-          <Index ID="215297" Value="3"/>
+          <Index ID="224517" Value="0"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -379,18 +372,18 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
-          <Property Name="Height" Value="60"/>
-          <Property Name="Left" Value="195"/>
+          <Property Name="Height" Value="50"/>
+          <Property Name="Left" Value="190"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="240"/>
-          <Property Name="Width" Value="590"/>
+          <Property Name="Top" Value="260"/>
+          <Property Name="Width" Value="450"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_1">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="300"/>
+          <Property Name="Left" Value="410"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -398,7 +391,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="255"/>
+          <Property Name="Top" Value="270"/>
           <Property Name="UnitText" Value="Abbreviation"/>
           <Property Name="UnitTextAlignment" Value="Left"/>
           <Property Name="UnitTextPosition" Value="Right"/>
@@ -414,60 +407,53 @@
           <Property Name="Font" Value="Source[local].Font[Input]"/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="28"/>
-          <Property Name="Left" Value="210"/>
+          <Property Name="Left" Value="211"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="3"/>
+          <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="256"/>
+          <Property Name="Top" Value="271"/>
           <Property Name="Width" Value="70"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_1">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[LedIndicator]"/>
-          <Property Name="BitmapIndex" Value="1"/>
-          <Property Name="BitmapSource" Value="BitmapGroup"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="40"/>
-          <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="435"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Visualization.VizControls.HeatingZone2ReadyIcon]"/>
+          <Property Name="Left" Value="580"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="250"/>
+          <Property Name="Top" Value="265"/>
           <Property Name="Width" Value="40"/>
         </Control>
-        <Control ClassId="0x00001012" Name="Scale_1">
-          <Property Name="BackColor" Value="16"/>
-          <Property Name="Border" Value="None"/>
+        <Control ClassId="0x00001004" Name="Text_3">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[BorderOff]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[Status]"/>
-          <Property Name="ForeColor" Value="254"/>
-          <Property Name="Height" Value="40"/>
-          <Property Name="Left" Value="490"/>
-          <Property Name="MajorPitchLines" Value="4"/>
-          <Property Name="MarkerBitmap" Value="Source[local].Bitmap[aa]"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="100"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="MinorPitchLines" Value="5"/>
-          <Property Name="MinorPitchLinesLength" Value="5"/>
-          <Property Name="Orientation" Value="Bottom"/>
-          <Property Name="RangeColor" Value="237"/>
-          <Property Name="RangeEndDatapoint" Value="None"/>
-          <Property Name="RangeEndValue" Value="100"/>
-          <Property Name="RangeStartDatapoint" Value="None"/>
-          <Property Name="RangeStartValue" Value="0"/>
-          <Property Name="RangeWidth" Value="5"/>
-          <Property Name="Spacing" Value="28"/>
+          <Property Name="ForeColor" Value="50"/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="HighlightingBackColor" Value="Source[embedded].Property[BackColor]"/>
+          <Property Name="HighlightingBorder" Value="Source[local].Border[BorderOn]"/>
+          <Property Name="HighlightingDatapoint" Value="Source[global].Variable[DataSource.Visualization.VizControls.HeatingOnOfText2]"/>
+          <Property Name="HighlightingForeColor" Value="221"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Visualization.VizControls.HeatingOnOfText2]"/>
+          <Property Name="Left" Value="310"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="VYP."/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="250"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gCurrentTemperatures.temperatureHeatZone2]"/>
-          <Property Name="ValueSimulation" Value="0"/>
-          <Property Name="Width" Value="270"/>
+          <Property Name="TextGroup" Value="Source[local].TextGroup[MyText]"/>
+          <Property Name="TextIndexOffset" Value="0"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="270"/>
+          <Property Name="Width" Value="60"/>
         </Control>
       </Controls>
       <KeyMapping/>
@@ -489,13 +475,22 @@
       <Property Name="Z-Order" Value="5"/>
       <TextGroup>
         <TextLayer LanguageId="cs">
-          <Text ID="215306" Value="Zóna 1"/>
+          <Text ID="224509" Value="Zóna 1"/>
+          <Text ID="224511" Value="VYP./ZAP."/>
+          <Text ID="224513" Value="Teplota PV"/>
+          <Text ID="224514" Value="Natopeno"/>
         </TextLayer>
         <TextLayer LanguageId="de">
-          <Text ID="215306" Value="Text_1"/>
+          <Text ID="224509" Value="Text_1"/>
+          <Text ID="224511" Value="Text_1"/>
+          <Text ID="224513" Value="Text_1"/>
+          <Text ID="224514" Value="Text_1"/>
         </TextLayer>
         <IndexMap>
-          <Index ID="215306" Value="4"/>
+          <Index ID="224509" Value="0"/>
+          <Index ID="224511" Value="2"/>
+          <Index ID="224513" Value="5"/>
+          <Index ID="224514" Value="6"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -504,26 +499,26 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
-          <Property Name="Height" Value="60"/>
+          <Property Name="Height" Value="50"/>
           <Property Name="Left" Value="190"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="160"/>
-          <Property Name="Width" Value="590"/>
+          <Property Name="Top" Value="200"/>
+          <Property Name="Width" Value="450"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_1">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="300"/>
+          <Property Name="Left" Value="410"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
           <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="1000"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="175"/>
+          <Property Name="Top" Value="210"/>
           <Property Name="UnitText" Value="Abbreviation"/>
           <Property Name="UnitTextAlignment" Value="Left"/>
           <Property Name="UnitTextPosition" Value="Right"/>
@@ -539,60 +534,107 @@
           <Property Name="Font" Value="Source[local].Font[Input]"/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="28"/>
-          <Property Name="Left" Value="210"/>
+          <Property Name="Left" Value="212"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="4"/>
+          <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="176"/>
+          <Property Name="Top" Value="211"/>
           <Property Name="Width" Value="70"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_1">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[LedIndicator]"/>
-          <Property Name="BitmapIndex" Value="1"/>
-          <Property Name="BitmapSource" Value="BitmapGroup"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="40"/>
-          <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="435"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Visualization.VizControls.HeatingZone1ReadyIcon]"/>
+          <Property Name="Left" Value="580"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="170"/>
+          <Property Name="Top" Value="205"/>
           <Property Name="Width" Value="40"/>
         </Control>
-        <Control ClassId="0x00001012" Name="Scale_1">
-          <Property Name="BackColor" Value="16"/>
-          <Property Name="Border" Value="None"/>
+        <Control ClassId="0x00001004" Name="Text_3">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[BorderOff]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[Status]"/>
-          <Property Name="ForeColor" Value="254"/>
-          <Property Name="Height" Value="40"/>
-          <Property Name="Left" Value="490"/>
-          <Property Name="MajorPitchLines" Value="4"/>
-          <Property Name="MarkerBitmap" Value="Source[local].Bitmap[aa]"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="100"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="MinorPitchLines" Value="5"/>
-          <Property Name="MinorPitchLinesLength" Value="5"/>
-          <Property Name="Orientation" Value="Bottom"/>
-          <Property Name="RangeColor" Value="237"/>
-          <Property Name="RangeEndDatapoint" Value="None"/>
-          <Property Name="RangeEndValue" Value="100"/>
-          <Property Name="RangeStartDatapoint" Value="None"/>
-          <Property Name="RangeStartValue" Value="0"/>
-          <Property Name="RangeWidth" Value="5"/>
-          <Property Name="Spacing" Value="28"/>
+          <Property Name="ForeColor" Value="50"/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="HighlightingBackColor" Value="Source[embedded].Property[BackColor]"/>
+          <Property Name="HighlightingBorder" Value="Source[local].Border[BorderOn]"/>
+          <Property Name="HighlightingDatapoint" Value="Source[global].Variable[DataSource.Visualization.VizControls.HeatingOnOfText1]"/>
+          <Property Name="HighlightingForeColor" Value="221"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Visualization.VizControls.HeatingOnOfText1]"/>
+          <Property Name="Left" Value="310"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="VYP."/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="170"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gCurrentTemperatures.temperatureHeatZone1]"/>
-          <Property Name="ValueSimulation" Value="0"/>
-          <Property Name="Width" Value="270"/>
+          <Property Name="TextGroup" Value="Source[local].TextGroup[MyText]"/>
+          <Property Name="TextIndexOffset" Value="0"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="210"/>
+          <Property Name="Width" Value="60"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_2">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[Input]"/>
+          <Property Name="ForeColor" Value="254"/>
+          <Property Name="Height" Value="28"/>
+          <Property Name="Left" Value="289"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="2"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="160"/>
+          <Property Name="Width" Value="102"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_5">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[Input]"/>
+          <Property Name="ForeColor" Value="254"/>
+          <Property Name="Height" Value="28"/>
+          <Property Name="Left" Value="415"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="5"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="160"/>
+          <Property Name="Width" Value="110"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_6">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[Input]"/>
+          <Property Name="ForeColor" Value="254"/>
+          <Property Name="Height" Value="28"/>
+          <Property Name="Left" Value="550"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="6"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="160"/>
+          <Property Name="Width" Value="100"/>
         </Control>
       </Controls>
       <KeyMapping/>
@@ -629,18 +671,18 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
-          <Property Name="Height" Value="60"/>
+          <Property Name="Height" Value="50"/>
           <Property Name="Left" Value="195"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="400"/>
-          <Property Name="Width" Value="540"/>
+          <Property Name="Top" Value="380"/>
+          <Property Name="Width" Value="250"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_1">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="300"/>
+          <Property Name="Left" Value="310"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -648,7 +690,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="415"/>
+          <Property Name="Top" Value="390"/>
           <Property Name="UnitText" Value="Abbreviation"/>
           <Property Name="UnitTextAlignment" Value="Left"/>
           <Property Name="UnitTextPosition" Value="Right"/>
@@ -664,46 +706,15 @@
           <Property Name="Font" Value="Source[local].Font[Input]"/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="28"/>
-          <Property Name="Left" Value="205"/>
+          <Property Name="Left" Value="207"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="4"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="416"/>
+          <Property Name="Top" Value="391"/>
           <Property Name="Width" Value="80"/>
-        </Control>
-        <Control ClassId="0x00001012" Name="Scale_1">
-          <Property Name="BackColor" Value="16"/>
-          <Property Name="Border" Value="None"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Font" Value="Source[local].Font[Status]"/>
-          <Property Name="ForeColor" Value="254"/>
-          <Property Name="Height" Value="40"/>
-          <Property Name="Left" Value="440"/>
-          <Property Name="MajorPitchLines" Value="4"/>
-          <Property Name="MarkerBitmap" Value="Source[local].Bitmap[aa]"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="100"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="MinorPitchLines" Value="5"/>
-          <Property Name="MinorPitchLinesLength" Value="5"/>
-          <Property Name="Orientation" Value="Bottom"/>
-          <Property Name="RangeColor" Value="237"/>
-          <Property Name="RangeEndDatapoint" Value="None"/>
-          <Property Name="RangeEndValue" Value="100"/>
-          <Property Name="RangeStartDatapoint" Value="None"/>
-          <Property Name="RangeStartValue" Value="0"/>
-          <Property Name="RangeWidth" Value="5"/>
-          <Property Name="Spacing" Value="28"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="410"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gCurrentTemperatures.temperatureIRSensor]"/>
-          <Property Name="ValueSimulation" Value="0"/>
-          <Property Name="Width" Value="270"/>
         </Control>
       </Controls>
       <KeyMapping/>
@@ -711,14 +722,14 @@
   </Layers>
   <MovementOrder/>
   <TabSequence>
-    <TabSeqItem Index="0" Value="Source[embedded].Layer[zone2].Control[Numeric_1]"/>
-    <TabSeqItem Index="1" Value="Source[embedded].Layer[zone3].Control[Numeric_1]"/>
-    <TabSeqItem Index="2" Value="Source[embedded].Layer[zone1].Control[Numeric_1]"/>
-    <TabSeqItem Index="3" Value="Source[embedded].Layer[IRSensor].Control[Numeric_1]"/>
-    <TabSeqItem Index="4" Value="Source[local].Layer[RightMenu].Control[Numeric_1]"/>
-    <TabSeqItem Index="5" Value="Source[local].Layer[RightMenu].Control[Numeric_5]"/>
-    <TabSeqItem Index="6" Value="Source[local].Layer[RightMenu].Control[Numeric_2]"/>
-    <TabSeqItem Index="7" Value="Source[local].Layer[RightMenu].Control[Numeric_3]"/>
-    <TabSeqItem Index="8" Value="Source[local].Layer[RightMenu].Control[Numeric_4]"/>
+    <TabSeqItem Index="0" Value="Source[embedded].Layer[IRSensor].Control[Numeric_1]"/>
+    <TabSeqItem Index="1" Value="Source[local].Layer[RightMenu].Control[Numeric_1]"/>
+    <TabSeqItem Index="2" Value="Source[local].Layer[RightMenu].Control[Numeric_5]"/>
+    <TabSeqItem Index="3" Value="Source[local].Layer[RightMenu].Control[Numeric_2]"/>
+    <TabSeqItem Index="4" Value="Source[local].Layer[RightMenu].Control[Numeric_3]"/>
+    <TabSeqItem Index="5" Value="Source[local].Layer[RightMenu].Control[Numeric_4]"/>
+    <TabSeqItem Index="6" Value="Source[embedded].Layer[zone1].Control[Numeric_1]"/>
+    <TabSeqItem Index="7" Value="Source[embedded].Layer[zone2].Control[Numeric_1]"/>
+    <TabSeqItem Index="8" Value="Source[embedded].Layer[zone3].Control[Numeric_1]"/>
   </TabSequence>
 </Page>

@@ -15,12 +15,13 @@ VAR
 	TONBlowing : TON;
 	TONFormLocking : TON;
 	cmdBlowing : BOOL;
-	cmdFormDown : BOOL;
 	cmdForming : BOOL;
 	cmdBubble : BOOL;
 	TOFForming : TOF;
-	TONOdfuk : TON;
-	TOFOdfuk : TOF;
-	cmdOdfuk : BOOL;
+	TONFreeItem : TON;
+	TOFFreeItem : TOF;
 	TONFormUp : TON;
+	cmdHeatingZone1 : BOOL;
+	cmdHeatingZone2 : BOOL;
+	cmdHeatingZone3 : BOOL;
 END_VAR

@@ -16,16 +16,22 @@
       <Text ID="221578" Value=""/>
       <Text ID="221579" Value="sekundy"/>
       <Text ID="221580" Value="s"/>
+      <Text ID="223046" Value="Percent"/>
+      <Text ID="223047" Value="%"/>
     </TextLayer>
     <TextLayer LanguageId="de">
       <Text ID="221578" Value=""/>
       <Text ID="221579" Value=""/>
       <Text ID="221580" Value=""/>
+      <Text ID="223046" Value=""/>
+      <Text ID="223047" Value=""/>
     </TextLayer>
     <IndexMap>
       <Index ID="221578" Value="0"/>
       <Index ID="221579" Value="1"/>
       <Index ID="221580" Value="2"/>
+      <Index ID="223046" Value="3"/>
+      <Index ID="223047" Value="4"/>
     </IndexMap>
   </TextGroup>
   <Units>
@@ -39,6 +45,21 @@
       <Property Name="Text_Description_TextIndex" Value="1"/>
       <Property Name="UnitFraction" Value="False"/>
       <Property Name="Unit_DefaultPrecision" Value="1"/>
+      <Property Name="Value[0].Internal" Value="0"/>
+      <Property Name="Value[0].Scaled" Value="0"/>
+      <Property Name="Value[1].Internal" Value="1"/>
+      <Property Name="Value[1].Scaled" Value="1"/>
+    </Unit>
+    <Unit ClassId="0x00000603" Name="percentage">
+      <Property Name="DefaultPrecisionDatapoint" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Index" Value="1"/>
+      <Property Name="Text_Abbreviation_TextGroup" Value="None"/>
+      <Property Name="Text_Abbreviation_TextIndex" Value="4"/>
+      <Property Name="Text_Description_TextGroup" Value="None"/>
+      <Property Name="Text_Description_TextIndex" Value="3"/>
+      <Property Name="UnitFraction" Value="False"/>
+      <Property Name="Unit_DefaultPrecision" Value="2"/>
       <Property Name="Value[0].Internal" Value="0"/>
       <Property Name="Value[0].Scaled" Value="0"/>
       <Property Name="Value[1].Internal" Value="1"/>

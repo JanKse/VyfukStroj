@@ -2,6 +2,7 @@
 TYPE
 	StateOfProcessType : 
 		(
+		ManualMode,
 		DefaultState,
 		Start,
 		BubbleANDFormDownDelay,
@@ -14,7 +15,8 @@ TYPE
 		temperatureHeatZone2 : INT;
 		temperatureHeatZone3 : INT;
 		temperatureIRSensor : INT;
-		defaultTemperatureValue : INT;
+		temperatureOffset : INT;
+		temperatureHysterese : REAL;
 	END_STRUCT;
 	TimersType : 	STRUCT 
 		HeatingTOFValue : REAL;
@@ -24,8 +26,8 @@ TYPE
 		FormingTONValue : REAL;
 		FormLockingTONValue : REAL;
 		FormingTOFVALUE : REAL;
-		OdfukTOFValue : REAL;
-		OdfukTONValue : REAL;
+		FreeItemTOFValue : REAL;
+		FreeItemTONValue : REAL;
 		FormUpTONValue : REAL;
 	END_STRUCT;
 END_TYPE

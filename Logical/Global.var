@@ -33,4 +33,9 @@ VAR
 	gSetTimersValues : TimersType;
 	gRecipeLoaded : BOOL;
 	gCurrentTemperatures : TemperaturesType;
+	gDiHeatingFront : BOOL;
+	gDiHeatingBack : BOOL;
+	gHeatingZone1Ready : BOOL;
+	gHeatingZone2Ready : BOOL;
+	gHeatingZone3Ready : BOOL;
 END_VAR

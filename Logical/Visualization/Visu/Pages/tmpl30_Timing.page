@@ -205,10 +205,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="60"/>
-          <Property Name="Left" Value="495"/>
+          <Property Name="Left" Value="480"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="Top" Value="380"/>
-          <Property Name="Width" Value="285"/>
+          <Property Name="Width" Value="300"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_1">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -217,7 +217,7 @@
           <Property Name="Font" Value="Source[local].Font[Input]"/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="47"/>
-          <Property Name="Left" Value="505"/>
+          <Property Name="Left" Value="489"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -238,7 +238,7 @@
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
           <Property Name="TeachDatapoint" Value="None"/>
@@ -247,7 +247,7 @@
           <Property Name="UnitTextAlignment" Value="Left"/>
           <Property Name="UnitTextPosition" Value="Right"/>
           <Property Name="UnitTextWidth" Value="0"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gSetTimersValues.FormUpTONValue]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gSetTimersValues.FreeItemTONValue]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="100"/>
         </Control>
@@ -271,7 +271,7 @@
       <Property Name="Z-Order" Value="4"/>
       <TextGroup>
         <TextLayer LanguageId="cs">
-          <Text ID="223012" Value="Doba odfuku"/>
+          <Text ID="223012" Value="Doba uvolnění výrobku"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="223012" Value="Text_1"/>
@@ -287,10 +287,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="60"/>
-          <Property Name="Left" Value="495"/>
+          <Property Name="Left" Value="480"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="Top" Value="311"/>
-          <Property Name="Width" Value="285"/>
+          <Property Name="Width" Value="300"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_1">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -299,7 +299,7 @@
           <Property Name="Font" Value="Source[local].Font[Input]"/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="47"/>
-          <Property Name="Left" Value="505"/>
+          <Property Name="Left" Value="489"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -320,7 +320,7 @@
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
           <Property Name="TeachDatapoint" Value="None"/>
@@ -329,7 +329,7 @@
           <Property Name="UnitTextAlignment" Value="Left"/>
           <Property Name="UnitTextPosition" Value="Right"/>
           <Property Name="UnitTextWidth" Value="0"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gSetTimersValues.OdfukTOFValue]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gSetTimersValues.FreeItemTOFValue]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="100"/>
         </Control>
@@ -403,7 +403,7 @@
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
           <Property Name="MinIntegerDigits" Value="0"/>
-          <Property Name="MinValue" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
           <Property Name="TeachDatapoint" Value="None"/>
@@ -436,7 +436,7 @@
       <Property Name="Z-Order" Value="6"/>
       <TextGroup>
         <TextLayer LanguageId="cs">
-          <Text ID="215447" Value="Doba zpoždění odfuku"/>
+          <Text ID="215447" Value="Doba zpoždění uvolnění výrobku"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="215447" Value="Text_1"/>
@@ -452,10 +452,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="60"/>
-          <Property Name="Left" Value="495"/>
+          <Property Name="Left" Value="480"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="Top" Value="240"/>
-          <Property Name="Width" Value="285"/>
+          <Property Name="Width" Value="300"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_1">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -464,7 +464,7 @@
           <Property Name="Font" Value="Source[local].Font[Input]"/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="47"/>
-          <Property Name="Left" Value="505"/>
+          <Property Name="Left" Value="489"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -473,7 +473,7 @@
           <Property Name="TextIndexOffset" Value="9"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="247"/>
-          <Property Name="Width" Value="160"/>
+          <Property Name="Width" Value="180"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_2">
           <Property Name="BackColor" Value="239"/>
@@ -485,7 +485,7 @@
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
           <Property Name="TeachDatapoint" Value="None"/>
@@ -494,7 +494,7 @@
           <Property Name="UnitTextAlignment" Value="Left"/>
           <Property Name="UnitTextPosition" Value="Right"/>
           <Property Name="UnitTextWidth" Value="0"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gSetTimersValues.OdfukTONValue]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.gSetTimersValues.FreeItemTONValue]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="100"/>
         </Control>
@@ -534,10 +534,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="60"/>
-          <Property Name="Left" Value="495"/>
+          <Property Name="Left" Value="480"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="Top" Value="170"/>
-          <Property Name="Width" Value="285"/>
+          <Property Name="Width" Value="300"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_1">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -546,7 +546,7 @@
           <Property Name="Font" Value="Source[local].Font[Input]"/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="47"/>
-          <Property Name="Left" Value="505"/>
+          <Property Name="Left" Value="489"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -567,7 +567,7 @@
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
           <Property Name="TeachDatapoint" Value="None"/>
@@ -616,10 +616,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="60"/>
-          <Property Name="Left" Value="495"/>
+          <Property Name="Left" Value="480"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="Top" Value="100"/>
-          <Property Name="Width" Value="285"/>
+          <Property Name="Width" Value="300"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_1">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -628,7 +628,7 @@
           <Property Name="Font" Value="Source[local].Font[Input]"/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="50"/>
-          <Property Name="Left" Value="505"/>
+          <Property Name="Left" Value="489"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -649,7 +649,7 @@
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
           <Property Name="TeachDatapoint" Value="None"/>
@@ -731,7 +731,7 @@
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
           <Property Name="TeachDatapoint" Value="None"/>
@@ -812,7 +812,7 @@
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
           <Property Name="TeachDatapoint" Value="None"/>
@@ -894,7 +894,7 @@
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
           <Property Name="TeachDatapoint" Value="None"/>
@@ -975,7 +975,7 @@
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
+          <Property Name="MinValue" Value="0"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
           <Property Name="TeachDatapoint" Value="None"/>

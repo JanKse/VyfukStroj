@@ -3,6 +3,7 @@ PROGRAM _INIT
 	(* Insert code here *)
 
 	UISetup.RecipeListSize := 5;
+	
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -13,7 +14,6 @@ PROGRAM _CYCLIC
 	MpRecipeXml_0.MpLink := ADR(gRecipeXml);
 	MpRecipeXml_0.Enable := TRUE;
 	MpRecipeXml_0.DeviceName := ADR('Recipe');
-	MpRecipeXml_0.FileName := ADR('test2');
 	gRecipeLoaded := UDINT_TO_BOOL(MpRecipeXml_0.Info.FileSize); // check if Recipe is loaded (If not lenght = 0)
 	
 	MpRecipeRegParTemperatures.MpLink := ADR(gRecipeXml);

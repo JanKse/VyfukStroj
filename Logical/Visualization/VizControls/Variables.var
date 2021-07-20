@@ -1,0 +1,20 @@
+VAR
+	ItemIconIndex : USINT;
+	MaterialIconIndex : USINT;
+	VacuumIconIndex : USINT;
+	CoolingIconIndex : USINT;
+	HeatingZone1IconIndex : USINT;
+	HeatingZone2IconIndex : USINT;
+	HeatingZone3IconIndex : USINT;
+	AirPumpIconIndex : USINT;
+	FrameDownIndex : USINT;
+	FrameUpIconIndex : USINT;
+	FormUpIndex : USINT;
+	HeatingOnOfText2 : USINT;
+	HeatingOnOfText3 : USINT;
+	HeatingOnOfText1 : USINT;
+	HeatingZone1ReadyIcon : USINT;
+	HeatingZone2ReadyIcon : USINT;
+	HeatingZone3ReadyIcon : USINT;
+	HeatingIconIdnex : USINT;
+END_VAR
